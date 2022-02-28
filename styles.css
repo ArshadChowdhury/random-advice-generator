@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: red;
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 7%;
+  background-color: hsl(217, 19%, 24%);
+  height: 40%;
+  width: 30%;
+  position: absolute;
+  z-index: 1;
+}
+
+.container img {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 3em;
+}
+
+.dice-button {
+  position: relative;
+  height: 3em;
+  width: 3em;
+  z-index: 999;
+  margin-top: 260px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cyan;
+  cursor: pointer;
+}
+
+.dice-button:hover {
+  background-color: hsl(150, 100%, 66%);
+}
+
+.advice-id {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  flex: 3;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 0.2rem;
+  font-size: 0.7rem;
+}
+
+.advice-text {
+  display: flex;
+  justify-content: center;
+  flex: 6;
+  font-weight: 800;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  padding: 0 32px 5px 32px;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 90%;
+  }
+  #adviceText {
+    flex: 4;
+    font-size: 1em;
+    padding: 0 7px;
+  }
+  #adviceNumber {
+    flex: 3;
+    font-size: 0.5em;
+    text-align: center;
+  }
+  .dice-button {
+    margin-bottom: 28px;
+  }
+}
+
+@media only screen and (max-width: 988px) {
+  .container {
+    width: 90%;
+  }
+  #adviceText {
+    flex: 4;
+    font-size: 1.2em;
+    padding: 0 7px;
+  }
+  #adviceNumber {
+    flex: 3;
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .dice-button {
+    margin-bottom: 28px;
+  }
+}
