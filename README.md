@@ -1,5 +1,5 @@
 # Random advice generator App
-## This app GETs advice from an API thn parse it and shows it on screen
+## This app makes a GET request to an API thn parse it and shows it on screen
 ### This is a challenge from front end mentor
 ## webpage link - https://arshadchowdhury.github.io/random-advice-generator/
 ### Here's a little preview of the App :
